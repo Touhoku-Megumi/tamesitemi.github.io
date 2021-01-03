@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>運試し</title>
+</head>
+<body>
+    <input id="omikuji_btn" type="button" value="おみくじを引く">
+    <script>
+        document.getElementById("omikuji_btn").onclick = function() {
+            var rnd = Math.floor( Math.random() * 16 );
+            var omikuji;
+            var komento;
+            if (rnd === 0) omikuji = "大吉(いいことあんで)";
+            if (rnd === 1) omikuji = "大吉(クレーバーがよく当たる気がする)";
+            if (rnd === 2) omikuji = "吉(良さげ)";
+            if (rnd === 3) omikuji = "中吉(何とかなる)";
+            if (rnd === 4) omikuji = "小吉(お腹すいた)";
+            if (rnd === 5) omikuji = "末吉(そういう日もある)";
+　　　　　　if (rnd === 6) omikuji = "凶(ウィングマン？やめとけ)"
+            if (rnd === 7) omikuji = "凶(ラッキーアイテムはハンマーポイント)";
+            if (rnd === 8) omikuji = "しけ吉(しけてんにぇ)";
+            if (rnd === 9) omikuji = "凶(研究データ無いなってんで)";
+            if (rnd === 10) omikuji = "ガチャ吉(ガチャすべし)";
+            if (rnd === 11) omikuji = "てぇてぇ";
+            if (rnd === 12) omikuji ="微凶(プログラムに謎のエラー出んで)";
+            if (rnd === 13) omikuji ="大凶(ボーナスみかんかも)"
+            if (rnd === 14) omikuji ="推し吉(スパチャしてグッズ買うべし)";
+            if (rnd === 15) omikuji ="猫吉(おがゆおがゆおがゆ)"
+            alert(omikuji);
+        }
+    </script>
+</body>
+</html>
